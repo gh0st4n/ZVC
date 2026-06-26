@@ -1,6 +1,6 @@
 # ZVC - Zig Version Control
 
-Tool sederhana untuk menginstall, mengelola, dan menggunakan berbagai versi Zig di sistem Linux/macOS. Dibuat murni menggunakan POSIX `sh` — tanpa dependency tambahan selain `curl` atau `wget`.
+Tool sederhana untuk menginstall, mengelola, dan menggunakan berbagai versi Zig di sistem Linux/macOS. Dibuat murni menggunakan POSIX `sh` - tanpa dependency tambahan selain `curl` atau `wget`.
 
 ## Fitur
 
@@ -98,7 +98,7 @@ zvc -u 0.13.0
 Atau langsung jalankan perintah Zig dengan versi tertentu:
 
 ```sh
-zvc -u 0.13.0 x86_64 -- build
+zvc -u 0.13.0 -- build
 zvc -u 0.13.0 x86_64 -- version
 ```
 
