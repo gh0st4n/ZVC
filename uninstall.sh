@@ -1,5 +1,7 @@
 #!/bin/sh
 
+# Script for Uninstall
+
 set -e
 
 ZVC_ROOT="/opt/zvc"
