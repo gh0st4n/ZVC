@@ -7,7 +7,7 @@ set -e
 ZVC_ROOT="/opt/zvc"
 ZVC_BIN="/usr/local/bin/zvc"
 
-root() { printf 'Error: %s\n' "$*" >&2; exit; }
+err() { printf 'Error: %s\n' "$*" >&2; exit; }
 info() { printf '[UNINSTALL] %s\n' "$*"; }
 
 root() {
