@@ -1,0 +1,20 @@
+# Template file for 'zvc'
+pkgname=zvc
+version=1.0
+revision=1
+archs="x86_64* x86_64-musl* aarch64* aarch64-musl* armv6l* armv6l-musl* armv7l* armv7l-musl* i686*"
+short_desc="Simple Script for Zig Version Control written shell(POSIX-sh)"
+maintainer="Gh0sT4n <darskevoid@gmail.com>"
+license="MIT"
+homepage="https://github.com/gh0st4n/ZVC/README.md"
+distfiles="https://github.com/gh0st4n/ZVC/archive/refs/tags/v${version}.tar.gz"
+checksum=SKIP
+
+depends="dash"
+
+do_install() {
+	vinstall zvc.sh 755 usr/bin/zvc
+
+	vdoc README.md
+	vlicense LICENSE
+}
